@@ -21,7 +21,9 @@ import foot_banner from "./foot_banner.jpeg"
 import remove from "./remove.png"
 import left_arrow from "./left_arrow.png"
 import map from "./map.png"
-
+import add_icon from "./add_icon.png"
+import list from "./list.png"
+import order from "./order_icon.png"
 
 export const assets = {
     logo, 
@@ -35,7 +37,10 @@ export const assets = {
     foot_banner,
     remove,
     left_arrow,
-    map
+    map,
+    add_icon,
+    list, 
+    order
 }
 
 export const categories = [
