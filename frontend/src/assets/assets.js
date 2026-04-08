@@ -20,6 +20,7 @@ import star_outline from "./staricondull.png"
 import foot_banner from "./foot_banner.jpeg"
 import remove from "./remove.png"
 import left_arrow from "./left_arrow.png"
+import map from "./map.png"
 
 
 export const assets = {
@@ -33,7 +34,8 @@ export const assets = {
     star_outline,
     foot_banner,
     remove,
-    left_arrow
+    left_arrow,
+    map
 }
 
 export const categories = [
