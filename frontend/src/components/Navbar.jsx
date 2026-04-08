@@ -54,10 +54,18 @@ const Navbar = () => {
                 }   
             </div>
 
-            <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="sm:hidden">
-                {/* Menu Icon SVG */}
-                <img src={assets.menu} className='h-15' alt="menu" />
-            </button>
+            <div className='flex items-center gap-6 sm:hidden'>
+                 <div onClick={() => navigate("/cart")} className="relative cursor-pointer">
+                    <img src={assets.cart} className='h-5' viewBox="0 0 14 14" fill="none">
+                    </img>
+                    <button className="absolute -top-2 -right-3 text-xs text-white bg-primary w-[18px] h-[18px] rounded-full">{ getCartCount() }</button>
+                </div>
+                    <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu">
+                    {/* Menu Icon SVG */}
+                    <img src={assets.menu} className='h-15' alt="menu" />
+                </button>
+
+            </div>
 
             {/* Mobile Menu */}
             { open && (

@@ -18,6 +18,8 @@ import GreenApple4 from "./GreenApple4.jpeg"
 import star from "./staricon.png"
 import star_outline from "./staricondull.png"
 import foot_banner from "./foot_banner.jpeg"
+import remove from "./remove.png"
+import left_arrow from "./left_arrow.png"
 
 
 export const assets = {
@@ -30,6 +32,8 @@ export const assets = {
     star,
     star_outline,
     foot_banner,
+    remove,
+    left_arrow
 }
 
 export const categories = [
@@ -158,4 +162,13 @@ export const dummyProducts = [
         updatedAt: "2026-03-03T07:17:46:018Z",
         inStock: true,
     },
+]
+
+export const dummyAddress = [
+    {
+        street: "Khulshi",
+        city: "Chittagong City",
+        state: "Chittagong",
+        country: "Bangladesh"
+    }
 ]

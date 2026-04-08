@@ -26,18 +26,18 @@ const ProductCard = ({product}) => {
                         {currency}${product.offerPrice}{" "} <span className="text-gray-500/60 md:text-sm text-xs line-through">{currency}${product.price}</span>
                     </p>
                     <div className="text-primary">
-                        {!cartItems[product._id] ? (
-                            <button className="flex items-center justify-center gap-1 bg-primary/10 border border-primary/40 md:w-[80px] w-[64px] h-[34px] rounded text-primary font-medium cursor-pointer" onClick={(e) => {e.stopPropagation(); addToCart(product._id)}} >
+                        {!cartItems[product.id] ? (
+                            <button className="flex items-center justify-center gap-1 bg-primary/10 border border-primary/40 md:w-[80px] w-[64px] h-[34px] rounded text-primary font-medium cursor-pointer" onClick={(e) => {e.stopPropagation(); addToCart(product.id)}} >
                                 <img src={assets.cart} className='h-3'/>
                                 Add
                             </button>
                         ) : (
                             <div className="flex items-center justify-center gap-2 md:w-20 w-16 h-[34px] bg-primary/25 rounded select-none">
-                                <button onClick={(e) => {e.stopPropagation(); removeFromCart(product._id)}} className="cursor-pointer text-md px-2 h-full" >
+                                <button onClick={(e) => {e.stopPropagation(); removeFromCart(product.id)}} className="cursor-pointer text-md px-2 h-full" >
                                     -
                                 </button>
-                                <span className="w-5 text-center">{cartItems[product._id]}</span>
-                                <button onClick={(e) => {e.stopPropagation(); addToCart(product._id)}} className="cursor-pointer text-md px-2 h-full" >
+                                <span className="w-5 text-center">{cartItems[product.id]}</span>
+                                <button onClick={(e) => {e.stopPropagation(); addToCart(product.id)}} className="cursor-pointer text-md px-2 h-full" >
                                     +
                                 </button>
                             </div>
