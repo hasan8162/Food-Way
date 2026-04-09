@@ -25,6 +25,7 @@ import add_icon from "./add_icon.png"
 import list from "./list.png"
 import order from "./order_icon.png"
 import upload_area from "./upload.jpg"
+import box from "./box.png"
 
 export const assets = {
     logo, 
@@ -42,7 +43,8 @@ export const assets = {
     add_icon,
     list, 
     order,
-    upload_area
+    upload_area,
+    box
 }
 
 export const categories = [
