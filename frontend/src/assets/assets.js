@@ -24,6 +24,7 @@ import map from "./map.png"
 import add_icon from "./add_icon.png"
 import list from "./list.png"
 import order from "./order_icon.png"
+import upload_area from "./upload.jpg"
 
 export const assets = {
     logo, 
@@ -40,7 +41,8 @@ export const assets = {
     map,
     add_icon,
     list, 
-    order
+    order,
+    upload_area
 }
 
 export const categories = [
