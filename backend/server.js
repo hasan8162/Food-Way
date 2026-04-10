@@ -7,6 +7,7 @@ import "dotenv/config";
 /* works when I add this */
 import dns from "node:dns/promises";   
 import userRouter from "./routes/userRoute.js";
+import sellerRouter from "./routes/sellerRoute.js";
 
 dns.setServers(["1.1.1.1", "1.0.0.1"]);
 
@@ -25,7 +26,8 @@ app.get("/", (req, res) => {
   res.send("Backend is working");
 });
 
-app.use('/api/user', userRouter)
+app.use('/api/user', userRouter);
+app.use('/api/seller', sellerRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
