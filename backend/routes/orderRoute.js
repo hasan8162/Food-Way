@@ -1,6 +1,7 @@
 import express from "express";
 import { getAllOrders, getUserOrders, placeOrderCOD } from "../controllers/orderController.js";
 import authSeller from "../middleware/authSeller.js";
+import authUser from "../middleware/authUser.js";
 
 const orderRouter = express.Router();
 
