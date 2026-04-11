@@ -8,6 +8,8 @@ import "dotenv/config";
 import dns from "node:dns/promises";   
 import userRouter from "./routes/userRoute.js";
 import sellerRouter from "./routes/sellerRoute.js";
+import connectCloudinary from "./configs/cloudinary.js";
+import productRouter from "./routes/productRoute.js";
 
 dns.setServers(["1.1.1.1", "1.0.0.1"]);
 
@@ -16,6 +18,7 @@ const port = process.env.PORT || 4000;
 const allowedOrigins = ["http://localhost:5173"];
 
 await connectDB()
+await connectCloudinary()
 
 //Middleware config
 app.use(express.json());
@@ -28,6 +31,7 @@ app.get("/", (req, res) => {
 
 app.use('/api/user', userRouter);
 app.use('/api/seller', sellerRouter);
+app.use('/api/product', productRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
