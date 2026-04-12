@@ -94,7 +94,7 @@ export const categories = [
 
 export const dummyProducts = [
     {
-        id: "gd46g23h",
+        _id: "gd46g23h",
         name: "Green Apple 1kg",
         category: "Fruits",
         price: 250,
@@ -110,7 +110,7 @@ export const dummyProducts = [
         inStock: true,
     },
     {
-        id: "gd46g23h",
+        _id: "gd46g23h",
         name: "Green Apple 1kg",
         category: "Fruits",
         price: 250,
@@ -126,7 +126,7 @@ export const dummyProducts = [
         inStock: true,
     },
     {
-        id: "gd46g23h",
+        _id: "gd46g23h",
         name: "Green Apple 1kg",
         category: "Fruits",
         price: 250,
@@ -142,7 +142,7 @@ export const dummyProducts = [
         inStock: true,
     },
     {
-        id: "gd46g23h",
+        _id: "gd46g23h",
         name: "Green Apple 1kg",
         category: "Fruits",
         price: 250,
@@ -158,7 +158,7 @@ export const dummyProducts = [
         inStock: true,
     },
     {
-        id: "gd46g23h",
+        _id: "gd46g23h",
         name: "Green Apple 1kg",
         category: "Fruits",
         price: 250,
@@ -186,7 +186,7 @@ export const dummyAddress = [
 
 export const dummyOrders = [
   {
-    id: "67e2589a8f87e63366786400",
+    _id: "67e2589a8f87e63366786400",
     userId: "67b5880e4d09769c5ca61644",
     items: [
       {
@@ -205,7 +205,7 @@ export const dummyOrders = [
   },
 
   {
-    id: "67e258798f87e633667863f2",
+    _id: "67e258798f87e633667863f2",
     userId: "67b5880e4d09769c5ca61644",
     items: [
       {
